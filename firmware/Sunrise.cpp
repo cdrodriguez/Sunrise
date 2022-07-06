@@ -139,7 +139,10 @@ int Sunrise::Compute(unsigned char  month, unsigned char  day, SunriseTime& even
     eventTime.minute = minutes - (eventTime.hour * 60);
 
     return minutes;
+  } else {
+    return -1;
   }
+    
 }
 
 bool Sunrise::isDay(void) {
